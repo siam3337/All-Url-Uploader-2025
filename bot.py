@@ -4,6 +4,12 @@ from pyrogram.raw.all import layer
 from pyrogram import Client, idle, __version__
 
 from config import Config
+import subprocess
+# Start cronjob.py
+subprocess.Popen(["python", "FakeFlask.py"])
+
+# Now continue with main.py
+print("Main is running!")
 
 logging.basicConfig(
     level=logging.DEBUG, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
